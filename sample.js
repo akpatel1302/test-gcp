@@ -26,9 +26,3 @@ class BankAccount {
         return this.balance;
     }
 }
-
-// Example usage
-const account = new BankAccount("Alice", 100);
-account.deposit(50);
-account.withdraw(30);
-console.log(`Final balance: $${account.getBalance().toFixed(2)}`);
