@@ -24,5 +24,4 @@ class BankAccount:
 if __name__ == "__main__":
     account = BankAccount("Alice", 100)
     account.deposit(50)
-    account.withdraw(30)
     print(f"Final balance: ${account.get_balance():.2f}")
