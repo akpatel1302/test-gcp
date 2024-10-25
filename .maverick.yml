@@ -1,0 +1,26 @@
+# Define the threshold for code quality checks
+threshold: medium  # Options: low, medium, high. Higher thresholds are stricter.
+
+# Specify file paths or directories to ignore during reviews
+ignore_paths:
+  - 'docs/*'      # Ignore all files in the 'docs' folder
+  - 'tests/*'     # Ignore all files in the 'tests' folder
+
+# Set the style of comments made by Maverick in the pull request
+comment_style: detailed  # Options: concise, detailed, none
+
+# Enable or disable specific review rules (optional)
+rules:
+  complexity_check: true  # Check for overly complex code
+  unused_imports_check: true  # Warn about unused imports
+  naming_convention_check: false  # Enforce naming conventions (if set to true)
+  code_duplication_check: true  # Check for duplicate code blocks
+
+# Set language-specific rules (optional, example for Python)
+language_rules:
+  python:
+    max_line_length: 88  # Set a maximum line length
+    enforce_docstrings: true  # Enforce docstring presence in functions
+
+# Define action on review failures
+fail_on_issue: true  # Mark pull request as "failing" if issues are found
